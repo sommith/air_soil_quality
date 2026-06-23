@@ -25,7 +25,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     # ⚠️ ເອົາ ID ໄຟລ໌ Google Drive ຂອງທ່ານມາປ່ຽນໃສ່ບ່ອນນີ້ເດີ້
-    file_id = "YOUR_GOOGLE_DRIVE_FILE_ID_HERE" 
+    file_id = "1_8xf-0miNd-PueUttQqWhCpDPJDru3rG" 
     model_path = "my_iot_model.pkl"
     
     # ຖ້າໃນເຊີເວີຍັງບໍ່ມີໄຟລ໌ model ໃຫ້ດາວໂຫລດມາທັນທີ
