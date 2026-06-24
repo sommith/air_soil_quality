@@ -30,7 +30,7 @@ def load_model():
     
     # ຖ້າໃນເຊີເວີຍັງບໍ່ມີໄຟລ໌ model ໃຫ້ດາວໂຫລດມາທັນທີ
     if not os.path.exists(model_path):
-        with st.spinner("ກຳລັງໂຫລດ AI Model ຈາກ Google Drive... กรุณารอสักครู่"):
+        with st.spinner("ກຳລັງໂຫລດ AI Model ຈາກ Google Drive..."):
             url = f'https://drive.google.com/uc?id={file_id}'
             gdown.download(url, model_path, quiet=False)
             
@@ -52,7 +52,7 @@ def get_status_info(value, metric_type):
 # Sidebar ສຳລັບຈຳລອງຄ່າ IoT
 st.sidebar.header("🔌 ຄ່າຈາກເຊັນເຊີ IoT (ປັດຈຸບັນ)")
 t = st.sidebar.slider("ອຸນຫະພູມຂອງອາກາດ (t)", 10.0, 45.0, 25.0)
-h = st.sidebar.slider("ຄວາມຊຸ່ມຊື່នຂອງອາກາດ (h)", 10.0, 100.0, 80.0)
+h = st.sidebar.slider("ຄວາມຊຸ່ມຊື່ນຂອງອາກາດ (h)", 10.0, 100.0, 80.0)
 pm1 = st.sidebar.slider("ຝຸ່ນ PM1", 5, 20, 11)
 pm10 = st.sidebar.slider("ຝຸ່ນ PM10", 5, 30, 14)
 temperature = st.sidebar.slider("ອຸນຫະພູມຂອງດິນ", 15.0, 35.0, 21.0)
